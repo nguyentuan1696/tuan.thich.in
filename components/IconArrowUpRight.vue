@@ -3,5 +3,5 @@ import { ArrowUpRight } from 'lucide-vue-next'
 </script>
 
 <template>
-    <ArrowUpRight />
+    <ArrowUpRight width="22" height="22" />
 </template>
