@@ -4,6 +4,7 @@
     Hi, I'm Tuan, a web developer
   </p>
   <section>
+    <ThePrinciple />
     <TheWork />
     <TheContact />
   </section>
