@@ -16,7 +16,7 @@
           Keep pushing the boundaries of your expertise
         </li>
         <li class="border px-3 py-2 rounded-2xl text-sm">
-          A job well done is necessarily economical, rarely cheap3
+          A job well done is necessarily economical, rarely cheap
         </li>
       </ul>
     </div>

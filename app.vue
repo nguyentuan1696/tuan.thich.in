@@ -5,9 +5,10 @@
     </aside>
     <section>
       <NuxtPage />
-      <TheFooter />
+    
     </section>
   </main>
+        <TheFooter />
 </template>
 
 <script setup lang="ts">
