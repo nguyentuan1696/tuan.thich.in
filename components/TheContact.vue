@@ -19,7 +19,7 @@
         <IconGithub class="mr-1" width="20" height="20" /> <span>github</span>
       </NuxtLink>
       <NuxtLink
-        to="https://github.com/nguyentuan1696"
+        to="https://www.linkedin.com/in/nguyentuan1696/"
         target="_blank"
         rel="noopener"
         class="inline-flex rounded-2xl items-center px-3 py-2 border"
