@@ -31,7 +31,7 @@ useSeoMeta({
     '🦄 My portfolio built with Nuxt3, Tailwind CSS, and Cloudflare Pages.',
   ogDescription:
     '🦄 My portfolio built with Nuxt3, Tailwind CSS, and Cloudflare Pages.',
-  ogImage: 'https://tuan.thich.in/img/thumbnail.png',
+  ogImage: 'https://tuan.thich.in/img/ogimage.png',
   twitterCard: 'summary_large_image',
 })
 </script>
