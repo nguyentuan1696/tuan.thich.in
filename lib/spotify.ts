@@ -1,6 +1,8 @@
-const client_id = process.env.SPOTIFY_CLIENT_ID
-const client_secret = process.env.SPOTIFY_CLIENT_SECRET
-const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN
+const runtimeConfig = useRuntimeConfig()
+
+const client_id = runtimeConfig.spotifyClientId
+const client_secret = runtimeConfig.spotifyClientSecret
+const refresh_token = runtimeConfig.spotifyRefreshToken
 
 const basic = btoa(`${client_id}:${client_secret}`)
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`
