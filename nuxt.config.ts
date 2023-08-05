@@ -13,4 +13,13 @@ export default defineNuxtConfig({
   gtag: {
     id: 'G-BV68HG6H3N',
   },
+  nitro: {
+    rollupConfig: {
+      output: {
+        generatedCode: {
+          symbols: true,
+        },
+      },
+    },
+  },
 })
