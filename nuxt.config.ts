@@ -23,9 +23,9 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
-    spotifyClientId: process.env.NUXT_SPOTIFY_CLIENT_ID ?? '',
-    spotifyClientSecret: process.env.NUXT_SPOTIFY_CLIENT_SECRET ?? '',
-    spotifyRefreshToken: process.env.NUXT_SPOTIFY_REFRESH_TOKEN ?? '',
+    spotifyClientId: process.env.NUXT_SPOTIFY_CLIENT_ID,
+    spotifyClientSecret: process.env.NUXT_SPOTIFY_CLIENT_SECRET,
+    spotifyRefreshToken: process.env.NUXT_SPOTIFY_REFRESH_TOKEN,
     public: {
       // For pubic key
       // apiBase: process.env.NUXT_PUBLIC_API_BASE ?? 'default value',
