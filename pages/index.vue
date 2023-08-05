@@ -4,5 +4,6 @@
     <ThePrinciple />
     <TheWork />
     <TheContact />
+    <TheWidget />
   </section>
 </template>
