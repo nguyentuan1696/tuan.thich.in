@@ -2,7 +2,8 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "build": "NITRO_PRESET=cloudflare yarn build",
+    "deploy": "NITRO_PRESET=cloudflare-pages npx nuxi build",
+    "build": "yarn build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
