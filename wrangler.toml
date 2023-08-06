@@ -1,0 +1,11 @@
+name = "tuan-thich-in-worker"
+main = ".output/server/index.mjs"
+account_id = "f51bb4ced8722b55c2a6684049dd2f1c"
+workers_dev = true
+compatibility_date = "2023-08-06"
+
+[site]
+bucket = "./.output/public"
+
+[build]
+command = "true"
