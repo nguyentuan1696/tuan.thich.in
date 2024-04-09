@@ -1,6 +1,6 @@
 <template>
   <main class="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-    <aside class="-ml-[8px] mb-16 tracking-tight">
+    <aside class="mb-16 tracking-tight">
       <TheHeader />
     </aside>
     <section>

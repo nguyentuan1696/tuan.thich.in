@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col gap-x-3.5 gap-y-3.5">
-    <h2 class="font-bold text-xl tracking-tighter">Work</h2>
+    <h2 class="font-bold text-xl tracking-tighter">Dự án</h2>
     <ul class="flex flex-wrap items-start gap-x-3.5 gap-y-3.5">
       <li class="px-3 py-4 border w-full">
         <NuxtLink
@@ -10,7 +10,7 @@
           class="flex justify-between items-center"
         >
           <div>
-            <p class="font-bold">Thich Tieng Anh</p>
+            <p class="font-bold">Thích Tiếng Anh</p>
             <p>thichtienganh.com</p>
           </div>
           <IconArrowUpRight />
@@ -24,7 +24,7 @@
           class="flex justify-between items-center"
         >
           <div>
-            <p class="font-bold">Thich Van Hoc</p>
+            <p class="font-bold">Thích Văn Học</p>
             <p>thichvanhoc.com</p>
           </div>
           <IconArrowUpRight />
@@ -38,22 +38,8 @@
           class="flex justify-between items-center"
         >
           <div>
-            <p class="font-bold">Thich Tai Lieu</p>
+            <p class="font-bold">Thích Tài Liệu</p>
             <p>thichtailieu.com</p>
-          </div>
-          <IconArrowUpRight />
-        </NuxtLink>
-      </li>
-      <li class="px-3 py-4 border w-full">
-        <NuxtLink
-          to="https://anh.thich.in"
-          target="_blank"
-          rel="noopener"
-          class="flex justify-between items-center"
-        >
-          <div>
-            <p class="font-bold">Thich Anh</p>
-            <p>anh.thich.in</p>
           </div>
           <IconArrowUpRight />
         </NuxtLink>

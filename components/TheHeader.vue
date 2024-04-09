@@ -1,6 +1,6 @@
 <template>
-  <nav class="space-x-2">
-    <NuxtLink to="/">home</NuxtLink>
-    <NuxtLink to="/note">note</NuxtLink>
+  <nav class="space-x-6">
+    <NuxtLink to="/">trang chủ</NuxtLink>
+    <NuxtLink to="/bai-viet">bài viết</NuxtLink>
   </nav>
 </template>
