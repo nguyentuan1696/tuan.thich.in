@@ -9,7 +9,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxt/image', 'nuxt-gtag'],
+  modules: ['@nuxt/image', 'nuxt-gtag', "@nuxt/content"],
+  content: {
+    // ... options
+  },
   gtag: {
     id: 'G-BV68HG6H3N',
   },

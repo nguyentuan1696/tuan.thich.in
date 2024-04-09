@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230801.0",
-    "@nuxt/content": "^2.7.2",
+    "@nuxt/content": "^2.12.1",
     "@nuxt/devtools": "latest",
     "@nuxt/image": "^1.0.0-rc.1",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
