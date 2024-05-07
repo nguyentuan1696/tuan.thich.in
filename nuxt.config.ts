@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxt/image', 'nuxt-gtag', "@nuxt/content"],
+  modules: ['@nuxt/image', 'nuxt-gtag', '@nuxt/content'],
   content: {
     // ... options
   },
@@ -17,6 +17,9 @@ export default defineNuxtConfig({
     id: 'G-BV68HG6H3N',
   },
   nitro: {
+    prerender: {
+      routes: ['/sitemap.xml'],
+    },
     rollupConfig: {
       output: {
         generatedCode: {

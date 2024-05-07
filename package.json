@@ -38,6 +38,7 @@
     "wrangler": "3.4.0"
   },
   "dependencies": {
-    "lucide-vue-next": "^0.263.0"
+    "lucide-vue-next": "^0.263.0",
+    "sitemap": "^7.1.1"
   }
 }
