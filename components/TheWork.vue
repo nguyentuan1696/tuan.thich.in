@@ -16,34 +16,6 @@
           <IconArrowUpRight />
         </NuxtLink>
       </li>
-      <li class="px-3 py-4 border w-full">
-        <NuxtLink
-          to="https://www.thichvanhoc.com"
-          target="_blank"
-          rel="noopener"
-          class="flex justify-between items-center"
-        >
-          <div>
-            <p class="font-bold">Thích Văn Học</p>
-            <p>thichvanhoc.com</p>
-          </div>
-          <IconArrowUpRight />
-        </NuxtLink>
-      </li>
-      <li class="px-3 py-4 border w-full">
-        <NuxtLink
-          to="https://www.thichtailieu.com"
-          target="_blank"
-          rel="noopener"
-          class="flex justify-between items-center"
-        >
-          <div>
-            <p class="font-bold">Thích Tài Liệu</p>
-            <p>thichtailieu.com</p>
-          </div>
-          <IconArrowUpRight />
-        </NuxtLink>
-      </li>
     </ul>
   </section>
 </template>
