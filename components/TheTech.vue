@@ -17,5 +17,21 @@
 
 <script setup>
 const title = "Kỹ năng"
-const principles = ["Golang", "NodeJS", "Javascript", "ReactJS", "VueJS", "TailwindCSS", "PostgreSQL", "Redis", "Docker", "Gitlab CI/CD", "Github Action", "RabbitMQ", "Apache Kafka"]
+const principles = [
+  "Golang",
+  "NodeJS",
+  "Javascript",
+  "ReactJS",
+  "NextJS",
+  "VueJS",
+  "NuxtJS",
+  "TailwindCSS",
+  "PostgreSQL",
+  "Redis",
+  "Docker",
+  "Gitlab CI/CD",
+  "Github Action",
+  "RabbitMQ",
+  "Apache Kafka",
+]
 </script>
