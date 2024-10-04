@@ -1,6 +1,6 @@
 <template>
   <footer class="flex justify-between mt-20">
-   <p>TuanNM</p>
-   <p>{{ new Date().getFullYear() }}</p>
+    <p>Tuannm built with ❤️ using <a href="https://nuxt.com/">NuxtJS</a></p>
+    <p>{{ new Date().getFullYear() }}</p>
   </footer>
 </template>

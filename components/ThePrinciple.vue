@@ -1,24 +1,22 @@
 <template>
-  <section class="flex flex-col gap-x-3.5 gap-y-3.5">
-    <h2 class="font-bold text-xl tracking-tighter">Principles I work by</h2>
+  <section class="flex flex-col gap-3.5">
+    <h2 class="font-bold text-xl tracking-tighter">{{ title }}</h2>
     <div>
-      <ul class="flex flex-wrap items-start gap-x-4 gap-y-4">
-        <li class="border px-3 py-2 rounded-2xl text-sm">
-          Do good work with good people
-        </li>
-        <li class="border px-3 py-2 rounded-2xl text-sm">
-          Curiosity over skepticism
-        </li>
-        <li class="border px-3 py-2 rounded-2xl text-sm">
-          Challenge people, trust people
-        </li>
-        <li class="border px-3 py-2 rounded-2xl text-sm">
-          Keep pushing the boundaries of your expertise
-        </li>
-        <li class="border px-3 py-2 rounded-2xl text-sm">
-          A job well done is necessarily economical, rarely cheap
+      <ul class="flex flex-wrap items-start gap-4">
+        <li v-for="principle in principles" :key="principle" class="border px-3 py-2 rounded-xl text-sm">
+          {{ principle }}
         </li>
       </ul>
     </div>
   </section>
 </template>
+
+<script setup>
+const title = 'Nguyên tắc làm việc';
+const principles = [
+  'Chất lượng là trên hết',
+  'Luôn mở rộng kiến thức và khám phá những cách tiếp cận mới',
+  'Hợp tác và tôn trọng',
+  'Giải quyết vấn đề một cách hiệu quả'
+];
+</script>

@@ -3,6 +3,7 @@
     <TheIntro />
     <ThePrinciple />
     <TheWork />
+    <TheTech />
     <TheContact />
     <TheWidget />
   </section>
