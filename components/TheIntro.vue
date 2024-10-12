@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col items-start gap-x-1.5 gap-y-1.5">
     <h1 class="font-bold text-2xl mb-8 tracking-tighter">🧑🏼‍💻👋</h1>
-    <p>Hello, I'm Nguyễn Tuấn.</p>
+    <p>Hello, I'm Tuan Nguyen.</p>
     <p>
       I'm a web developer specializing in building user-friendly and accessible
       products. I especially enjoy working in small, collaborative teams to
