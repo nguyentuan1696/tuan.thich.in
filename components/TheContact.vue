@@ -10,7 +10,36 @@
         rel="noopener"
         class="inline-flex items-center px-3 py-2 border rounded-xl"
       >
-        <component :is="contact.icon" class="mr-1" width="20" height="20" />
+        <IconEmail
+          v-if="contact.icon === 'IconEmail'"
+          class="mr-1"
+          width="20"
+          height="20"
+        />
+        <IconGithub
+          v-if="contact.icon === 'IconGithub'"
+          class="mr-1"
+          width="20"
+          height="20"
+        />
+        <IconLinkedin
+          v-if="contact.icon === 'IconLinkedin'"
+          class="mr-1"
+          width="20"
+          height="20"
+        />
+        <IconFacebook
+          v-if="contact.icon === 'IconFacebook'"
+          class="mr-1"
+          width="20"
+          height="20"
+        />
+        <IconTelegram
+          v-if="contact.icon === 'IconTelegram'"
+          class="mr-1"
+          width="20"
+          height="20"
+        />
         <span>{{ contact.name }}</span>
       </NuxtLink>
     </div>
@@ -18,7 +47,12 @@
 </template>
 
 <script setup>
-const title = "Liên hệ @"
+import IconGithub from "@/components/IconGithub.vue"
+import IconLinkedin from "@/components/IconLinkedin.vue"
+import IconFacebook from "@/components/IconFacebook.vue"
+import IconTelegram from "@/components/IconTelegram.vue"
+
+const title = "contact"
 
 const contacts = [
   { name: "email", url: "mailto:nguyentuan1696@gmail.com", icon: "IconEmail" },

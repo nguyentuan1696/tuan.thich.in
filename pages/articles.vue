@@ -8,7 +8,7 @@ useHead({
   <div>
     <!-- Blog List  -->
     <ContentList
-      path="/bai-viet"
+      path="/articlesz"
       fields="title,date,thumbnail"
       :query="{
         draft: false,
