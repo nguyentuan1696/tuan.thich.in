@@ -16,7 +16,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18 # Đảm bảo đúng phiên bản Node.js
+          node-version: 18 # Đảm bảo dùng phiên bản Node.js >= 16
+
+      - name: Install Yarn
+        run: npm install --global yarn # Đảm bảo yarn được cài đặt
 
       - name: Install dependencies
         run: yarn install # Nếu bạn dùng npm, thay bằng "npm install"
