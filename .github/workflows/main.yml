@@ -27,7 +27,17 @@ jobs:
       - name: Install Wrangler
         run: npm install --global wrangler
 
-      - name: Publish to Cloudflare Workers
+      - name: Build project
+        run: yarn build
+
+      - name: Verify build output
+        run: |
+          if [ ! -f .output/server/index.mjs ]; then
+            echo "Build output file not found: .output/server/index.mjs"
+            exit 1
+          fi
+
+      - name: Deploy to Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
