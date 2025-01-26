@@ -16,13 +16,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18 # Đảm bảo dùng phiên bản Node.js >= 16
+          node-version: 20 # Đảm bảo dùng phiên bản Node.js >= 16
 
       - name: Install Yarn
         run: npm install --global yarn # Đảm bảo yarn được cài đặt
 
       - name: Install dependencies
         run: yarn install # Nếu bạn dùng npm, thay bằng "npm install"
+
+      - name: Install Wrangler
+        run: npm install --global wrangler
 
       - name: Publish to Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
