@@ -2,7 +2,8 @@ name = "tuan-thich-in-worker"
 main = ".output/server/index.mjs"
 account_id = "f51bb4ced8722b55c2a6684049dd2f1c"
 workers_dev = true
-compatibility_date = "2023-07-24"
+compatibility_flags = [ "nodejs_compat" ]
+compatibility_date = "2024-09-23"
 
 [site]
 bucket = "./.output/public"
