@@ -40,6 +40,12 @@
           width="20"
           height="20"
         />
+        <IconThreads
+          v-if="contact.icon === 'IconThreads'"
+          class="mr-1"
+          width="20"
+          height="20"
+        />
         <span>{{ contact.name }}</span>
       </NuxtLink>
     </div>
@@ -51,6 +57,7 @@ import IconGithub from "@/components/IconGithub.vue"
 import IconLinkedin from "@/components/IconLinkedin.vue"
 import IconFacebook from "@/components/IconFacebook.vue"
 import IconTelegram from "@/components/IconTelegram.vue"
+import IconThreads from "@/components/IconThreads.vue"
 
 const title = "contact"
 
@@ -75,6 +82,11 @@ const contacts = [
     name: "telegram",
     url: "https://t.me/nguyentuan1696",
     icon: "IconTelegram",
+  },
+  {
+    name: "threads",
+    url: "https://threads.com/nguyentuan1696",
+    icon: "IconThreads",
   },
 ]
 </script>
