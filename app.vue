@@ -28,8 +28,8 @@ useHead({
   ],
 })
 useSeoMeta({
-  title: 'Tuan Nguyen | tuan.thich.in',
-  ogTitle: 'Tuan Nguyen | tuan.thich.in',
+  title: '🦄 Tuan Nguyen | tuan.thich.in',
+  ogTitle: '🦄 Tuan Nguyen | tuan.thich.in',
   description:
     '🦄 My portfolio built with Nuxt3, Tailwind CSS, and Cloudflare Pages.',
   ogDescription:
