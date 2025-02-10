@@ -3,19 +3,24 @@ export default defineNuxtConfig({
   pages: true,
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   modules: ['@nuxt/image', 'nuxt-gtag', '@nuxt/content'],
+
   content: {
     // ... options
   },
+
   gtag: {
     id: 'G-BV68HG6H3N',
   },
+
   nitro: {
     prerender: {
       routes: ['/sitemap.xml'],
@@ -28,6 +33,7 @@ export default defineNuxtConfig({
       },
     },
   },
+
   runtimeConfig: {
     spotifyClientId: process.env.NUXT_SPOTIFY_CLIENT_ID,
     spotifyClientSecret: process.env.NUXT_SPOTIFY_CLIENT_SECRET,
@@ -37,4 +43,6 @@ export default defineNuxtConfig({
       // apiBase: process.env.NUXT_PUBLIC_API_BASE ?? 'default value',
     },
   },
+
+  compatibilityDate: '2025-02-10',
 })
