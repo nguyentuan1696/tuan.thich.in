@@ -44,19 +44,28 @@ const { slug } = useRoute().params;
   @apply mb-4;
 }
 
+.content ul,
+.content ol {
+  @apply list-disc pl-5;
+}
+
+.content li {
+  @apply mb-2;
+}
+
 .content h1 {
-  @apply text-3xl font-bold;
+  @apply text-4xl font-bold;
 }
 .content h2 {
-  @apply text-2xl font-bold;
+  @apply text-3xl font-bold;
 }
 .content h3 {
-  @apply text-xl font-bold;
+  @apply text-2xl font-bold;
 }
 .content h4 {
-  @apply text-lg font-bold;
+  @apply text-lg font-semibold;
 }
 .content h5 {
-  @apply text-base font-bold;
+  @apply text-base font-medium;
 }
 </style>
