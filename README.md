@@ -62,4 +62,5 @@ yarn preview
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 ## Note
-https://leerob.io/blog/spotify-api-nextjs
+- https://leerob.io/blog/spotify-api-nextjs
+- https://www.jamesfmackenzie.com/getting-started-with-the-pocket-developer-api/
