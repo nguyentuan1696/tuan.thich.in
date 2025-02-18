@@ -1,5 +1,6 @@
 {
   "files.associations": {
-    "*.css": "tailwindcss"
-  }
+  // "*.scss": "tailwindcss", // If you use .scss
+  "*.vue": "vue"
+}
 }
