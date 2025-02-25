@@ -59,7 +59,7 @@ import IconFacebook from "@/components/IconFacebook.vue"
 import IconTelegram from "@/components/IconTelegram.vue"
 import IconThreads from "@/components/IconThreads.vue"
 
-const title = "contact"
+const title = "Contact"
 
 const contacts = [
   { name: "email", url: "mailto:nguyentuan1696@gmail.com", icon: "IconEmail" },

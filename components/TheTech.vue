@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-const title = "skills"
+const title = "Tech Stack"
 const principles = [
   "Golang",
   "NodeJS",

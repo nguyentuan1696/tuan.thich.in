@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-const title = "work principles"
+const title = "Work principles"
 const principles = [
   "Integrity",
   "Accountability",
