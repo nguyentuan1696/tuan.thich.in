@@ -42,5 +42,5 @@ jobs:
       - name: Publish to Cloudflare
         uses: cloudflare/wrangler-action@2.0.0
         with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           command: publish --name fb-nuxt-${{ github.ref_name }}
