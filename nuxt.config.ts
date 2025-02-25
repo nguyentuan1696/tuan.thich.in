@@ -11,14 +11,18 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/image", "nuxt-gtag", "@nuxt/content"],
+  modules: [
+    "@nuxt/image",
+    "@nuxt/content",
+    "@zadigetvoltaire/nuxt-gtm",
+  ],
 
   content: {
     // ... options
   },
 
-  gtag: {
-    id: "G-BV68HG6H3N",
+  gtm: {
+    id: "GTM-KPLSWCJZ",
   },
 
   nitro: {
