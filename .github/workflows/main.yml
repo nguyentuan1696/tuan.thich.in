@@ -1,36 +1,48 @@
-name: Deploy to Cloudflare Workers
+name: cloudflare
 
 on:
   push:
     branches:
       - main
+      - develop
 
 jobs:
-  deploy:
+  ci:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        os: [ ubuntu-latest ]
+        node: [ 16 ]
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v1
         with:
-          node-version: 20 # Đảm bảo dùng phiên bản Node.js >= 16
+          node-version: 16
 
-      - name: Install Yarn
-        run: npm install --global yarn # Đảm bảo yarn được cài đặt
+      - name: Checkout
+        uses: actions/checkout@master
 
-      - name: Install dependencies
-        run: yarn install # Nếu bạn dùng npm, thay bằng "npm install"
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ubuntu-latest-node-v16-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
 
-      - name: Install Wrangler
-        run: npm install --global wrangler
+      - name: Install Dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: yarn
 
-      - name: Build project
+      - name: Build
         run: yarn build
+        env:
+          NITRO_PRESET: cloudflare
+          NUXT_API_URL: 'https://cms.fredrikburmester.com/'
+          NUXT_SSR: 'true'
 
-      - name: Deploy to Cloudflare Workers
-        uses: cloudflare/wrangler-action@v3
+      - name: Publish to Cloudflare
+        uses: cloudflare/wrangler-action@2.0.0
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          command: publish --name fb-nuxt-${{ github.ref_name }}
+name: cloudflare
