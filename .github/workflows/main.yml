@@ -45,4 +45,3 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           command: publish --name fb-nuxt-${{ github.ref_name }}
-name: cloudflare
