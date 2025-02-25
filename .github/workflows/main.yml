@@ -1,5 +1,3 @@
-name: cloudflare
-
 on:
   push:
     branches:
@@ -23,7 +21,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Cache node_modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: node_modules
           key: ubuntu-latest-node-v18-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
@@ -43,4 +41,4 @@ jobs:
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          command: publish --name fb-nuxt-${{ github.ref_name }}
+          command: deploy --name fb-nuxt-${{ github.ref_name }}
