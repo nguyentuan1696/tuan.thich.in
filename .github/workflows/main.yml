@@ -34,11 +34,10 @@ jobs:
         run: yarn build
         env:
           NITRO_PRESET: cloudflare
-          NUXT_API_URL: 'https://cms.fredrikburmester.com/'
           NUXT_SSR: 'true'
 
       - name: Publish to Cloudflare
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          command: deploy --name fb-nuxt-${{ github.ref_name }}
+          command: deploy --name tuan-thich-in-${{ github.ref_name }}
