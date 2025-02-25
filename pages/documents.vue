@@ -19,7 +19,7 @@ const documents: Document[] = [
     name: "Distributed Systems for practitioners.pdf",
     fileSize: "10.6 MB",
     lastModified: "2025-02-24",
-    url: "https://drive.google.com/file/d/1i814yxpIGiuAvAcWLLGmIetZfdDiEQcn",
+    url: "https://drive.proton.me/urls/4V00RDET1G#dNvNhhC7YqWJ",
   },
 ]
 </script>
