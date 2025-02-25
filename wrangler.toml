@@ -1,6 +1,6 @@
 main = "./.output/server/index.mjs"
 workers_dev = true
-compatibility_date = "2022–10–17"
+compatibility_date = "2022-10-17"
 account_id = "f51bb4ced8722b55c2a6684049dd2f1c"
 [site]
 bucket = ".output/public"
