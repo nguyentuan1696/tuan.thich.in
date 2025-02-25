@@ -22,7 +22,7 @@
     <div v-if="error" class="error">{{ error }}</div>
     <div class="items-container" v-else>
       <article
-        v-for="item in filteredItems"
+        v-for="item in paginatedItems"
         :key="item.item_id"
         class="item-card"
       >
@@ -66,11 +66,45 @@
         </div>
       </article>
     </div>
+
+    <!-- Pagination -->
+    <div v-if="totalPages > 1" class="pagination">
+      <button 
+        @click="currentPage > 1 && (currentPage--)" 
+        :disabled="currentPage === 1"
+        class="page-button"
+      >
+        &laquo; Previous
+      </button>
+      
+      <div class="page-numbers">
+        <button 
+          v-for="page in displayedPageNumbers" 
+          :key="page"
+          @click="currentPage = page"
+          :class="['page-number', currentPage === page ? 'active' : '']"
+        >
+          {{ page }}
+        </button>
+      </div>
+      
+      <button 
+        @click="currentPage < totalPages && (currentPage++)" 
+        :disabled="currentPage === totalPages"
+        class="page-button"
+      >
+        Next &raquo;
+      </button>
+    </div>
+    
+    <div v-if="!loading && filteredItems.length === 0" class="no-results">
+      No bookmarks found matching your filters.
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from "vue"
+import { ref, computed, onMounted, watch } from "vue"
 import { useRuntimeConfig } from "#app"
 
 interface PocketItem {
@@ -93,6 +127,10 @@ const selectedTag = ref("")
 const loading = ref(false)
 const error = ref<string | null>(null)
 
+// Pagination
+const currentPage = ref(1)
+const itemsPerPage = 10
+
 const filteredItems = computed(() => {
   return Object.values(items.value)
     .filter((item) => item.status !== "2")
@@ -111,6 +149,65 @@ const filteredItems = computed(() => {
     .sort((a, b) => b.time_added - a.time_added)
 })
 
+const totalPages = computed(() => {
+  return Math.ceil(filteredItems.value.length / itemsPerPage)
+})
+
+const paginatedItems = computed(() => {
+  const startIndex = (currentPage.value - 1) * itemsPerPage
+  const endIndex = startIndex + itemsPerPage
+  return filteredItems.value.slice(startIndex, endIndex)
+})
+
+// Dynamic page number display
+const displayedPageNumbers = computed(() => {
+  const total = totalPages.value
+  const current = currentPage.value
+  
+  if (total <= 7) {
+    // If we have 7 or fewer pages, show all page numbers
+    return Array.from({ length: total }, (_, i) => i + 1)
+  }
+  
+  // Always include first and last page
+  const pages = [1]
+  
+  // Determine the range around the current page
+  let rangeStart = Math.max(2, current - 1)
+  let rangeEnd = Math.min(total - 1, current + 1)
+  
+  // Adjust to always show 3 pages in the middle
+  if (rangeEnd - rangeStart < 2) {
+    if (current <= 4) {
+      rangeEnd = Math.min(4, total - 1)
+    } else {
+      rangeStart = Math.max(total - 3, 2)
+    }
+  }
+  
+  // Add ellipsis if needed before the range
+  if (rangeStart > 2) {
+    pages.push(-1) // -1 is a placeholder for ellipsis
+  }
+  
+  // Add the range pages
+  for (let i = rangeStart; i <= rangeEnd; i++) {
+    pages.push(i)
+  }
+  
+  // Add ellipsis if needed after the range
+  if (rangeEnd < total - 1) {
+    pages.push(-2) // -2 is another placeholder for ellipsis
+  }
+  
+  // Add the last page
+  if (total > 1) {
+    pages.push(total)
+  }
+  
+  return pages
+})
+
 const uniqueTags = computed(() => {
   const tags = new Set<string>()
   Object.values(items.value).forEach((item) => {
@@ -119,6 +216,11 @@ const uniqueTags = computed(() => {
     }
   })
   return Array.from(tags).sort()
+})
+
+// Reset to first page when filters change
+watch([searchQuery, selectedTag], () => {
+  currentPage.value = 1
 })
 
 const formatDate = (timestamp: number): string => {
@@ -286,6 +388,82 @@ header {
   background-color: #cbd5e0;
 }
 
+/* Pagination styles */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.page-button {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  color: #444;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+}
+
+.page-button:hover:not(:disabled) {
+  background-color: #e9ecef;
+}
+
+.page-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-numbers {
+  display: flex;
+  gap: 5px;
+}
+
+.page-number {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+}
+
+.page-number:hover:not(.active) {
+  background-color: #e9ecef;
+}
+
+.page-number.active {
+  background-color: #2c5282;
+  color: white;
+  border-color: #2c5282;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px 0;
+  color: #666;
+  font-size: 16px;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 40px 0;
+  color: #666;
+  font-size: 16px;
+}
+
+.error {
+  color: #e53e3e;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .item-card {
@@ -295,6 +473,16 @@ header {
   .item-thumbnail {
     width: 100%;
     height: 200px;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .page-numbers {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 </style>
