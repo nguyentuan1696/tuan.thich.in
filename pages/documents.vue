@@ -21,6 +21,13 @@ const documents: Document[] = [
     lastModified: "2025-02-24",
     url: "https://drive.proton.me/urls/4V00RDET1G#dNvNhhC7YqWJ",
   },
+  {
+    id: "2",
+    name: "CMU 15-441/641: Networking and the Internet, Fall 2024",
+    fileSize: "",
+    lastModified: "2025-02-28",
+    url: "https://drive.proton.me/urls/DQ7SVVNKT0#VCjlIl1U6M88",
+  },
 ]
 </script>
 
