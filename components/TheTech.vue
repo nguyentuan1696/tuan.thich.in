@@ -33,5 +33,7 @@ const principles = [
   "Github Action",
   "RabbitMQ",
   "Apache Kafka",
+  "Nginx",
+  "Ansible"
 ]
 </script>

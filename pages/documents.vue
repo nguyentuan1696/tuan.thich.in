@@ -7,7 +7,6 @@ useHead({
 interface Document {
   id: string
   name: string
-  fileSize: string
   lastModified: string
   url: string
 }
@@ -17,14 +16,12 @@ const documents: Document[] = [
   {
     id: "1",
     name: "Distributed Systems for practitioners.pdf",
-    fileSize: "10.6 MB",
     lastModified: "2025-02-24",
     url: "https://drive.proton.me/urls/4V00RDET1G#dNvNhhC7YqWJ",
   },
   {
     id: "2",
     name: "CMU 15-441/641: Networking and the Internet, Fall 2024",
-    fileSize: "",
     lastModified: "2025-02-28",
     url: "https://drive.proton.me/urls/DQ7SVVNKT0#VCjlIl1U6M88",
   },
@@ -68,8 +65,6 @@ const documents: Document[] = [
             <div
               class="flex flex-wrap items-center gap-2 sm:gap-4 mt-2 text-sm text-gray-500"
             >
-              <span>{{ doc.fileSize }}</span>
-              <span class="hidden sm:inline">•</span>
               <time>{{
                 new Date(doc.lastModified).toLocaleDateString("en-US", {
                   year: "numeric",
@@ -101,7 +96,7 @@ const documents: Document[] = [
                   d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                 ></path>
               </svg>
-              Xem
+              Download
             </a>
           </div>
         </div>

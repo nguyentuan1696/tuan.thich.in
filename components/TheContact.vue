@@ -57,9 +57,8 @@ import IconGithub from "@/components/IconGithub.vue"
 import IconLinkedin from "@/components/IconLinkedin.vue"
 import IconFacebook from "@/components/IconFacebook.vue"
 import IconTelegram from "@/components/IconTelegram.vue"
-import IconThreads from "@/components/IconThreads.vue"
 
-const title = "Contact"
+const title = "Contacts"
 
 const contacts = [
   { name: "email", url: "mailto:nguyentuan1696@gmail.com", icon: "IconEmail" },
@@ -82,11 +81,6 @@ const contacts = [
     name: "telegram",
     url: "https://t.me/nguyentuan1696",
     icon: "IconTelegram",
-  },
-  {
-    name: "threads",
-    url: "https://threads.com/nguyentuan1696",
-    icon: "IconThreads",
   },
 ]
 </script>
