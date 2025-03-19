@@ -4,12 +4,7 @@ import { useRuntimeConfig } from "#app"
 
 useHead({
   title: "Bookmarks",
-  meta: [
-    {
-      name: "description",
-      content: "My curated collection of bookmarks from Pocket",
-    },
-  ],
+  meta: [{ name: "description", content: "My curated collection of bookmarks from Pocket" }],
 })
 
 interface PocketItem {
@@ -25,6 +20,8 @@ const runtimeConfig = useRuntimeConfig()
 const items = ref<Record<string, PocketItem>>({})
 const loading = ref(false)
 const error = ref<string | null>(null)
+const currentPage = ref(1)
+const itemsPerPage = 25
 
 const sortedItems = computed(() => {
   return Object.values(items.value)
@@ -32,7 +29,20 @@ const sortedItems = computed(() => {
     .sort((a, b) => b.time_added - a.time_added)
 })
 
+const paginatedItems = computed(() => {
+  const start = (currentPage.value - 1) * itemsPerPage
+  const end = start + itemsPerPage
+  return sortedItems.value.slice(start, end)
+})
+
+const totalPages = computed(() => Math.ceil(sortedItems.value.length / itemsPerPage))
 const isEmpty = computed(() => !loading.value && sortedItems.value.length === 0)
+const showPagination = computed(() => totalPages.value > 1)
+
+const changePage = (page: number) => {
+  currentPage.value = page
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 
 const fetchItems = async () => {
   if (loading.value) return
@@ -74,22 +84,38 @@ onMounted(fetchItems)
 
     <div v-if="loading" class="text-gray-500" role="status">Loading...</div>
 
-    <ul
-      v-else-if="!isEmpty"
-      class="list-disc pl-4 space-y-2"
-      aria-label="Bookmarks list"
-    >
-      <li v-for="item in sortedItems" :key="item.item_id">
-        <a
-          :href="item.resolved_url"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-gray-500 hover:text-gray-800 transition-colors"
+    <template v-else-if="!isEmpty">
+      <ul class="list-disc pl-4 space-y-2 mb-8" aria-label="Bookmarks list">
+        <li v-for="item in paginatedItems" :key="item.item_id">
+          <a
+            :href="item.resolved_url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-500 hover:text-gray-800 transition-colors"
+          >
+            {{ item.resolved_title || item.given_title || "Untitled" }}
+          </a>
+        </li>
+      </ul>
+
+      <!-- Pagination -->
+      <div v-if="showPagination" class="flex justify-center gap-2 mt-8">
+        <button
+          v-for="page in totalPages"
+          :key="page"
+          @click="changePage(page)"
+          :class="[
+            'px-3 py-1 rounded',
+            currentPage === page
+              ? 'bg-gray-800 text-white'
+              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+          ]"
+          :aria-current="currentPage === page ? 'page' : undefined"
         >
-          {{ item.resolved_title || item.given_title || "Untitled" }}
-        </a>
-      </li>
-    </ul>
+          {{ page }}
+        </button>
+      </div>
+    </template>
 
     <div v-else class="text-gray-500">No bookmarks found.</div>
   </div>
