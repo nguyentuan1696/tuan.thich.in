@@ -9,6 +9,16 @@
 <script setup lang="ts">
 import { TheHeader, TheFooter } from "#components"
 
+useHead({
+  link: [
+    {
+      rel: "icon",
+      type: "image/x-icon",
+      href: "/favicon.ico",
+    },
+  ],
+})
+
 useSeoMeta({
   title: "Tuan Nguyen | tuan.thich.in",
   ogTitle: "Tuan Nguyen | tuan.thich.in",
