@@ -1,44 +1,36 @@
+name: Deploy to Cloudflare
+
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
-  ci:
+  deploy:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        os: [ ubuntu-latest ]
-        node: [ 18 ]
+    env:
+      NODE_VERSION: 18
+      NITRO_PRESET: cloudflare
+      NUXT_SSR: 'true'
 
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
 
-      - name: Checkout
-        uses: actions/checkout@master
-
-      - name: Cache node_modules
-        uses: actions/cache@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          path: node_modules
-          key: ubuntu-latest-node-v18-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'yarn'
 
       - name: Install Dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn
+        run: yarn install --frozen-lockfile
 
       - name: Build
         run: yarn build
-        env:
-          NITRO_PRESET: cloudflare
-          NUXT_SSR: 'true'
 
-      - name: Publish to Cloudflare
-        uses: cloudflare/wrangler-action@2.0.0
+      - name: Deploy to Cloudflare
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           command: deploy --name tuan-thich-in-${{ github.ref_name }}

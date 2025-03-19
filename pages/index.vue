@@ -1,10 +1,7 @@
 <template>
-  <section class="space-y-14">
+  <section class="space-y-10">
     <TheIntro />
-    <ThePrinciple />
     <TheWork />
     <TheTech />
-    <TheContact />
-    <TheWidget />
   </section>
 </template>
