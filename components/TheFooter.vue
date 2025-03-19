@@ -1,5 +1,5 @@
 <template>
-  <footer class="text-gray-500 mb-10">
+  <footer class="text-gray-500 my-10">
     <ul>
       <li class="flex justify-center gap-3">
         <a
