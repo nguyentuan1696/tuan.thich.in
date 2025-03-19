@@ -1,13 +1,9 @@
 <template>
   <section class="flex flex-col gap-3.5">
-    <h2 class="font-bold text-xl tracking-tighter">{{ title }}</h2>
+    <h2>{{ title }}</h2>
     <div>
       <ul class="flex flex-wrap items-start gap-4">
-        <li
-          v-for="principle in principles"
-          :key="principle"
-          class="border px-3 py-2 rounded-xl text-sm"
-        >
+        <li v-for="principle in principles" :key="principle" class="text-gray-500">
           {{ principle }}
         </li>
       </ul>
@@ -34,6 +30,6 @@ const principles = [
   "RabbitMQ",
   "Apache Kafka",
   "Nginx",
-  "Ansible"
+  "Ansible",
 ]
 </script>
