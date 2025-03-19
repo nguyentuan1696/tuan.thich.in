@@ -15,7 +15,19 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/content",
     "@zadigetvoltaire/nuxt-gtm",
+    "@nuxtjs/google-fonts",
   ],
+
+  googleFonts: {
+    families: {
+      "Be+Vietnam+Pro": {
+        wght: [300, 400, 500, 600, 700]
+      },
+    },
+    display: "swap",
+    prefetch: true,
+    preconnect: true,
+  },
 
   content: {
     // ... options

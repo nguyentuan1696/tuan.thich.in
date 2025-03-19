@@ -1,9 +1,9 @@
 <template>
-  <section class="flex flex-col items-start gap-x-1.5 gap-y-1.5">
+  <section>
     <p>
-      I'm a web developer focused on creating user-friendly, accessible
-      products. I thrive in small, collaborative teams tackling complex business
-      challenges.
+      I'm a web developer passionate about building user-friendly, accessible
+      products. I thrive in small, collaborative teams, solving complex business
+      challenges with scalable, high-performance solutions.
     </p>
   </section>
 </template>
