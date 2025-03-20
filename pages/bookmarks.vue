@@ -4,7 +4,12 @@ import { useRuntimeConfig } from "#app"
 
 useHead({
   title: "Bookmarks",
-  meta: [{ name: "description", content: "My curated collection of bookmarks from Pocket" }],
+  meta: [
+    {
+      name: "Bookmarks",
+      content: "My curated collection of bookmarks from Pocket",
+    },
+  ],
 })
 
 interface PocketItem {
@@ -35,13 +40,15 @@ const paginatedItems = computed(() => {
   return sortedItems.value.slice(start, end)
 })
 
-const totalPages = computed(() => Math.ceil(sortedItems.value.length / itemsPerPage))
+const totalPages = computed(() =>
+  Math.ceil(sortedItems.value.length / itemsPerPage)
+)
 const isEmpty = computed(() => !loading.value && sortedItems.value.length === 0)
 const showPagination = computed(() => totalPages.value > 1)
 
 const changePage = (page: number) => {
   currentPage.value = page
-  window.scrollTo({ top: 0, behavior: 'smooth' })
+  window.scrollTo({ top: 0, behavior: "smooth" })
 }
 
 const fetchItems = async () => {
@@ -108,7 +115,7 @@ onMounted(fetchItems)
             'px-3 py-1 rounded',
             currentPage === page
               ? 'bg-gray-800 text-white'
-              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              : 'bg-gray-100 text-gray-700 hover:bg-gray-200',
           ]"
           :aria-current="currentPage === page ? 'page' : undefined"
         >

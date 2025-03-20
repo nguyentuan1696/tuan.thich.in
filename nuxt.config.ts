@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       "Be+Vietnam+Pro": {
-        wght: [300, 400, 500, 600, 700]
+        wght: [300, 400, 500, 600, 700],
       },
     },
     display: "swap",

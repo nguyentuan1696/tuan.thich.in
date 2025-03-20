@@ -1,6 +1,21 @@
 # tuan.thich.in
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A personal website built with Nuxt 3, featuring a blog, portfolio, and various integrations. This project showcases modern web development practices and serves as a platform for sharing technical knowledge and experiences.
+
+## Features
+
+- 📝 Markdown-based blog posts
+- 🎨 Clean and minimalist design
+- 🚀 Fast and SEO-friendly
+- 📱 Fully responsive layout
+- 🌙 Dark mode support
+
+## Tech Stack
+
+- **Framework:** Nuxt 3
+- **Styling:** Tailwind CSS
+- **Content:** Nuxt Content
+- **Deployment:** Cloudflare Pages
 
 ## Setup
 
@@ -61,6 +76,3 @@ yarn preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-## Note
-- https://leerob.io/blog/spotify-api-nextjs
-- https://www.jamesfmackenzie.com/getting-started-with-the-pocket-developer-api/
