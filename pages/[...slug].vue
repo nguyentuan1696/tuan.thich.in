@@ -1,6 +1,27 @@
 <script lang="ts" setup>
+const formatDate = (dateString: string) => {
+  if (!dateString) return ''
+  const date = new Date(dateString)
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  })
+}
+
+const { data: doc } = await useAsyncData("doc", () =>
+  queryContent(useRoute().path).findOne()
+)
+
 useHead({
-  title: "Blog",
+  title: doc.value?.title,
+})
+
+useSeoMeta({
+  title: doc.value?.title,
+  ogTitle: doc.value?.title,
+  description: doc.value?.description,
+  ogDescription: doc.value?.description,
 })
 </script>
 
@@ -8,9 +29,11 @@ useHead({
   <article>
     <ContentDoc v-slot="{ doc }">
       <header class="mb-8">
-        <h1 class="text-xl font-bold">{{ doc.title }}</h1>
+        <h1 class="text-xl font-medium">{{ doc.title }}</h1>
+        <div class="text-sm text-gray-400">
+          {{ doc.date ? formatDate(doc.date) : '' }}
+        </div>
       </header>
-
       <div class="prose">
         <ContentRenderer :value="doc" />
       </div>
@@ -27,16 +50,12 @@ useHead({
 .prose h2,
 .prose h3,
 .prose h4 {
-  @apply text-gray-900 font-bold mb-4;
+  @apply text-gray-900 font-medium mb-4;
 }
 
-.prose h1 {
-  @apply text-xl;
-}
-.prose h2 {
-  @apply text-xl;
-}
-.prose h3 {
+.prose h1,
+h2,
+h3 {
   @apply text-lg;
 }
 

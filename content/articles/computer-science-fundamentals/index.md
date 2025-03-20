@@ -4,9 +4,7 @@ description: Brief Note on Computer Science Fundamentals
 date: 2025-02-14
 ---
 
-## Roadmap
-
-### Computer Networks
+## Computer Networks
 
 - Network Transmission and Performance 
 - Link Layer
@@ -30,7 +28,7 @@ date: 2025-02-14
 - Cellular
 - Network Functions
 
-### Database
+## Database
 
 - Data models (relational, document, key/value)
 - Storage models (n-ary, decomposition)
