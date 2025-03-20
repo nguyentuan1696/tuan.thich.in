@@ -19,7 +19,6 @@
 
 <script setup>
 const contacts = [
-  { name: "email", url: "mailto:nguyentuan1696@gmail.com" },
   { name: "github", url: "https://github.com/nguyentuan1696" },
   { name: "linkedin", url: "https://www.linkedin.com/in/nguyentuan1696/" },
   { name: "telegram", url: "https://t.me/nguyentuan1696" },

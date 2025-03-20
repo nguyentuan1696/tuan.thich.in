@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col gap-x-3.5 gap-y-3.5">
-    <h2>Projects</h2>
+    <h2 class="text-base">Projects</h2>
     <ul class="list-disc pl-4 space-y-2">
       <li v-for="(project, index) in projects" :key="index">
         <NuxtLink

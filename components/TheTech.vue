@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col gap-3.5">
-    <h2>{{ title }}</h2>
+    <h2 class="text-base">{{ title }}</h2>
     <div>
       <ul class="flex flex-wrap items-start gap-4">
         <li v-for="principle in principles" :key="principle" class="text-gray-500">
