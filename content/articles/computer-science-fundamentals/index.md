@@ -1,6 +1,6 @@
 ---
-title: Brief Note on Computer Science Fundamentals 
-description: Brief Note on Computer Science Fundamentals
+title: Computer Science Fundamentals 
+description: A comprehensive guide covering essential topics in Computer Networks and Database Systems
 date: 2025-02-14
 ---
 
