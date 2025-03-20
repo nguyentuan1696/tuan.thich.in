@@ -56,7 +56,7 @@ useSeoMeta({
 .prose h1,
 h2,
 h3 {
-  @apply text-lg;
+  @apply text-base;
 }
 
 .prose p,
@@ -72,5 +72,11 @@ h3 {
 
 .prose li {
   @apply mb-2;
+}
+
+.prose p a,
+.prose li a,
+.prose code a {
+  @apply text-blue-500 hover:text-gray-800 transition-colors;
 }
 </style>
