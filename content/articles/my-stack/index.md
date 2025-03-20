@@ -6,7 +6,7 @@ date: 2025-03-20
 
 ## 1. Frontend (React and Next.js)
 
-Since 2020, I've specialized in React ecosystem, later adopting Next.js in 2022 for building modern web applications. The stack incorporates TypeScript to ensure robust type safety and enhanced development experience. Each project follows the [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/) methodology, creating scalable and maintainable component architectures.
+Since 2019, I've specialized in React ecosystem, later adopting Next.js in 2021 for building modern web applications. The stack incorporates TypeScript to ensure robust type safety and enhanced development experience. Each project follows the [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/) methodology, creating scalable and maintainable component architectures.
 
 ## 2. Styling (Tailwind CSS and shadcn/ui)
 
@@ -18,7 +18,7 @@ With Node.js experience since 2019 and Golang since 2021, I've developed a balan
 
 ## 4. Database (PostgreSQL)
 
-Raw SQL queries form the foundation of my database interactions, providing precise control and optimal performance. The [postgres](https://github.com/porsager/postgres) library handles JavaScript implementations, while [sqlx](https://github.com/jmoiron/sqlx) manages Golang applications, ensuring type safety and query efficiency.
+PostgreSQL is my database of choice for its reliability and robust feature set. Raw SQL queries form the foundation of database interactions, providing precise control and optimal performance. The [postgres](https://github.com/porsager/postgres) library handles JavaScript implementations, while [sqlx](https://github.com/jmoiron/sqlx) manages Golang applications, ensuring type safety and query efficiency.
 
 ## 5. Infrastructure
 
