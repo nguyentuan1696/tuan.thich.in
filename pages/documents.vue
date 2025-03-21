@@ -27,11 +27,6 @@ const documents: readonly Document[] = [
     name: "Distributed Systems for practitioners.pdf",
     url: "https://drive.proton.me/urls/4V00RDET1G#dNvNhhC7YqWJ",
   },
-  {
-    id: "2",
-    name: "CMU 15-441/641: Networking and the Internet, Fall 2024",
-    url: "https://drive.proton.me/urls/DQ7SVVNKT0#VCjlIl1U6M88",
-  },
 ] as const
 
 const isEmpty = computed(() => documents.length === 0)

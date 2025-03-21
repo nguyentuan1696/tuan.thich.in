@@ -1,12 +1,12 @@
 ---
-title: Computer Science Fundamentals 
+title: Computer Science Fundamentals
 description: A comprehensive guide covering essential topics in Computer Networks and Database Systems
 date: 2025-02-14
 ---
 
 ## Computer Networks
 
-- Network Transmission and Performance 
+- Network Transmission and Performance
 - Link Layer
 - Ethernet and Switching
 - Distance Vector Routing
@@ -39,3 +39,10 @@ date: 2025-02-14
 - Recovery (logging, checkpoints)
 - Query processing (joins, sorting, aggregation, optimization)
 - Parallel architectures (multi-core, distributed)
+
+## Learning Resources
+
+- [CMU 15-441/641, Fall 2024](https://psteenkiste.github.io/nets-fa24/)
+- [CMU 15-445/645 Spring 2024](https://15445.courses.cs.cmu.edu/spring2024/)
+- [CS 61B Spring 2024](https://sp24.datastructur.es/)
+- [CS 61B Textbook](https://cs61b-2.gitbook.io/cs61b-textbook)
