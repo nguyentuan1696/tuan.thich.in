@@ -10,6 +10,9 @@
 import { TheHeader, TheFooter } from "#components"
 
 useHead({
+  htmlAttrs: {
+    lang: 'vi'
+  },
   link: [
     {
       rel: "icon",
