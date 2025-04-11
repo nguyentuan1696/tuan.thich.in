@@ -2,17 +2,17 @@
    <h1 class="mb-8">Get Udemy</h1>
     
     <div class="flex flex-col items-center justify-center">
-      <div class="space-y-4 mb-6 w-full max-w-md">
+      <div class="flex gap-4 mb-6 w-full max-w-md">
         <button 
-          @click="getCourseInfo"
-          class="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+          @click="getUdemy"
+          class="w-full border border-gray-300 hover:bg-gray-50 px-4 py-2 rounded"
         >
-          Get Udemmy
+          Get Udemy
         </button>
         
         <button 
           @click="getLoginCode"
-          class="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded"
+          class="w-full border border-gray-300 hover:bg-gray-50 px-4 py-2 rounded"
         >
           Get Login Code
         </button>
@@ -32,7 +32,7 @@ export default {
     }
   },
   methods: {
-    getCourseInfo() {
+    getUdemy() {
       this.result = `<div class="space-y-2">
         <div><strong>ID:</strong> nguyentuanudemy@gmail.com</div>
         <div><strong>Password:</strong> trang654321</div>
