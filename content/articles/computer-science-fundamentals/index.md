@@ -48,3 +48,4 @@ date: 2025-02-14
 - [CS 61B Textbook](https://cs61b-2.gitbook.io/cs61b-textbook)
 - [Computer Networks: A Systems Approach](https://book.systemsapproach.org/index.html)
 - [15-440/640 Distributed Systems](https://www.andrew.cmu.edu/course/15-440/)
+- [Machine Learning in Production (17-445/17-645/17-745)](https://mlip-cmu.github.io/f2024/)
