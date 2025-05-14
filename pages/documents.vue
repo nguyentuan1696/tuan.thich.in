@@ -24,8 +24,13 @@ interface Document {
 const documents: readonly Document[] = [
   {
     id: "1",
-    name: "Distributed Systems for practitioners.pdf",
-    url: "https://drive.proton.me/urls/4V00RDET1G#dNvNhhC7YqWJ",
+    name: "Distributed Systems for practitioners",
+    url: "https://bit.ly/4mcTAvE",
+  },
+  {
+    id: "1",
+    name: "Grokking Modern System Design Interview for Engineers & Managers",
+    url: "https://bit.ly/3YJwjaR",
   },
 ] as const
 
