@@ -39,7 +39,7 @@
     "wrangler": "3.105.1"
   },
   "dependencies": {
-    "lucide-vue-next": "^0.263.0",
+    "lucide-vue-next": "^0.511.0",
     "sitemap": "^7.1.1",
     "vue-masonry-css": "^1.0.3"
   },
