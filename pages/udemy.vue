@@ -10,7 +10,7 @@
       <p>
         Step 1:
         <a 
-        href="https://www.udemy.com/join/login-popup/?passwordredirect=True" 
+        href="https://www.udemy.com/join/passwordless-auth/?next=%2Fhome%2Fmy-courses%2F&action=login&mode" 
         target="_blank" 
         rel="noopener" 
         class="mb-6 text-blue-500 hover:underline"

@@ -28,9 +28,14 @@ const documents: readonly Document[] = [
     url: "https://bit.ly/4mcTAvE",
   },
   {
-    id: "1",
+    id: "2",
     name: "Grokking Modern System Design Interview for Engineers & Managers",
     url: "https://bit.ly/3YJwjaR",
+  },
+  {
+    id: "3",
+    name: "Core Banking Systems",
+    url: "https://bit.ly/3YUM4Md",
   },
 ] as const
 
