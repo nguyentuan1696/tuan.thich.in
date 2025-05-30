@@ -5,7 +5,7 @@
     <div class="flex flex-col space-y-4">
       <div class="mb-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
         <h2 class="text-lg font-semibold mb-2">Support</h2>
-        <p class="mb-4">If you find this account helpful, please consider buying me a coffee!</p>
+        <p class="mb-4">Your contribution will help me buy more new courses.</p>
         <div class="flex flex-col items-center space-y-4">
           <a 
             href="https://www.paypal.com/paypalme/NguyenTuan1696" 
