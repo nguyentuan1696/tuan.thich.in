@@ -29,7 +29,7 @@
         :class="{ 'opacity-0 scale-y-0': !isMenuOpen, 'opacity-100 scale-y-100': isMenuOpen }"
       >
         <div class="flex flex-col space-y-4">
-          <NuxtLink to="/articles" @click="closeMenu" class="transition-colors duration-200 hover:text-blue-500">articles</NuxtLink>
+          <NuxtLink to="/notes" @click="closeMenu" class="transition-colors duration-200 hover:text-blue-500">notes</NuxtLink>
           <NuxtLink to="/bookmarks" @click="closeMenu" class="transition-colors duration-200 hover:text-blue-500">bookmarks</NuxtLink>
           <NuxtLink to="/documents" @click="closeMenu" class="transition-colors duration-200 hover:text-blue-500">documents</NuxtLink>
           <NuxtLink to="/udemy" @click="closeMenu" class="transition-colors duration-200 hover:text-blue-500">udemy</NuxtLink>
