@@ -4,10 +4,9 @@ description: Postgresql
 date: 2025-06-03
 ---
 
-
 ## Common PostgreSQL Index Types
 
-Postgres supports many index types, from the default b-tree indexes to more exotic types like hash, GIN, GiST, or BRIN. They are well documented in the PostgreSQL docs, but here’s a quick summary:
+Postgres supports many index types, from the default b-tree indexes to more exotic types like hash, GIN, GiST, or BRIN. They are well documented in the [PostgreSQL docs](https://www.postgresql.org/docs/current/indexes-types.html), but here’s a quick summary:
 
 ### B-Tree indexes (default index type in PostgreSQL)
 

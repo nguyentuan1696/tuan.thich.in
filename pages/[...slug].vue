@@ -79,4 +79,16 @@ h3 {
 .prose code a {
   @apply text-blue-500 hover:text-gray-800 transition-colors;
 }
+
+.prose code {
+  @apply bg-gray-100 rounded px-1.5 py-0.5 text-sm text-gray-800;
+}
+
+.prose pre {
+  @apply bg-gray-100 rounded-lg p-4 mb-4 overflow-x-auto;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0 text-sm block;
+}
 </style>
