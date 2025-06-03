@@ -3,7 +3,7 @@
     <!-- Desktop Menu -->
     <div class="hidden md:flex space-x-6">
       <NuxtLink to="/">Tuan Nguyen</NuxtLink>
-      <NuxtLink to="/articles">articles</NuxtLink>
+      <NuxtLink to="/notes">notes</NuxtLink>
       <NuxtLink to="/bookmarks">bookmarks</NuxtLink>
       <NuxtLink to="/documents">documents</NuxtLink>
       <NuxtLink to="/udemy">udemy</NuxtLink>

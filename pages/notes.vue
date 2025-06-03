@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-useHead({ title: "Articles" })
+useHead({ title: "Notes" })
 </script>
 
 <template>
   <div>
-    <h1 class="mb-8">Articles</h1>
+    <h1 class="mb-8">Notes</h1>
     <ContentList
-      path="/articles"
+      path="/notes"
       :query="{ draft: false, sort: [{ date: -1 }] }"
     >
       <template #default="{ list }">
