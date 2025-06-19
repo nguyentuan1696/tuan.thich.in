@@ -6,7 +6,6 @@
       <NuxtLink to="/notes">notes</NuxtLink>
       <NuxtLink to="/bookmarks">bookmarks</NuxtLink>
       <NuxtLink to="/documents">documents</NuxtLink>
-      <NuxtLink to="/udemy">udemy</NuxtLink>
     </div>
 
     <!-- Mobile Menu Button -->
@@ -32,7 +31,6 @@
           <NuxtLink to="/notes" @click="closeMenu" class="transition-colors duration-200 hover:text-blue-500">notes</NuxtLink>
           <NuxtLink to="/bookmarks" @click="closeMenu" class="transition-colors duration-200 hover:text-blue-500">bookmarks</NuxtLink>
           <NuxtLink to="/documents" @click="closeMenu" class="transition-colors duration-200 hover:text-blue-500">documents</NuxtLink>
-          <NuxtLink to="/udemy" @click="closeMenu" class="transition-colors duration-200 hover:text-blue-500">udemy</NuxtLink>
         </div>
       </div>
     </div>
