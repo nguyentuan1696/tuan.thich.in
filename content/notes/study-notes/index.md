@@ -1,6 +1,6 @@
 ---
-title: Computer Science Fundamentals
-description: A comprehensive guide covering essential topics in Computer Networks and Database Systems
+title: Study Notes
+description: Personal learning journey,tracking progress and key takeaways.
 date: 2025-02-14
 ---
 
