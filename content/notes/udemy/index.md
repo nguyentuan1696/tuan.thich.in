@@ -19,4 +19,4 @@ Use the account information below to log in to Udemy.
 
 ### Step 3: Get OTP Login Code
 
-[Join telegram channel](https://t.me/get_udemy_bot) or search "@get_udemy_bot"
+[Join telegram channel](https://t.me/+5oB9E_P5B-A1MWJl)
