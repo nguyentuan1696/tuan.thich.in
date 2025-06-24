@@ -1,8 +1,10 @@
 ---
 title: Udemy
-description: udemy
+description: udemy account for free
 date: 2025-06-19
 ---
+
+My udemy account have many courses about software development, data science, and devops, and I share them with you total free !!!
 
 Use the account information below to log in to Udemy.
 
