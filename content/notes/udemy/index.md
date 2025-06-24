@@ -16,3 +16,8 @@ Use the account information below to log in to Udemy.
 
 - ID: nguyentuanudemy@gmail.com
 - Password: trang654321
+
+### Step 3: Get OTP Codoe
+
+- Go to telegram group:
+- https://t.me/get_udemy_bot
