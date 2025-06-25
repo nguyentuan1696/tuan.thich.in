@@ -14,21 +14,9 @@
 <script setup>
 const title = "Tech Stack"
 const techStack = [
-  // Programming Languages
-  "Typescript",
   "Javascript",
   "Golang",
   "Python",
-
-  // Frontend
-  "Vue",
-  "React",
-  "Next.js",
-  "Tailwind CSS",
-
-  // Backend
-  "NestJS",
-  "FastAPI",
 
   // Databases
   "PostgreSQL",
