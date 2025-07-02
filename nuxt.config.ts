@@ -62,6 +62,7 @@ export default defineNuxtConfig({
       pocketAccessToken: process.env.NUXT_PUBLIC_POCKET_ACCESS_TOKEN,
       posthogPublicKey: process.env.NUXT_PUBLIC_POSTHOG_PUBLIC_KEY,
       posthogHost: "https://us.i.posthog.com",
+      posthogDefaults: "2025-05-24",
     },
   },
 
