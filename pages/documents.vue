@@ -37,6 +37,11 @@ const documents: readonly Document[] = [
     name: "Core Banking Systems",
     url: "https://bit.ly/3YUM4Md",
   },
+   {
+    id: "4",
+    name: "English",
+    url: "https://bit.ly/44V6xma",
+  },
 ] as const
 
 const isEmpty = computed(() => documents.length === 0)
