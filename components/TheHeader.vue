@@ -4,7 +4,6 @@
     <div class="hidden md:flex space-x-6">
       <NuxtLink to="/">Tuan Nguyen</NuxtLink>
       <NuxtLink to="/notes">notes</NuxtLink>
-      <NuxtLink to="/bookmarks">bookmarks</NuxtLink>
       <NuxtLink to="/documents">documents</NuxtLink>
     </div>
 
@@ -29,7 +28,6 @@
       >
         <div class="flex flex-col space-y-4">
           <NuxtLink to="/notes" @click="closeMenu" class="transition-colors duration-200 hover:text-blue-500">notes</NuxtLink>
-          <NuxtLink to="/bookmarks" @click="closeMenu" class="transition-colors duration-200 hover:text-blue-500">bookmarks</NuxtLink>
           <NuxtLink to="/documents" @click="closeMenu" class="transition-colors duration-200 hover:text-blue-500">documents</NuxtLink>
         </div>
       </div>
