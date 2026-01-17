@@ -25,6 +25,10 @@ export default {
           title: "BlueNet Tech & Services Co., Ltd",
           link: "https://bluenet.vn",
         },
+        {
+          title: "AnaWim English",
+          link: "https://www.anawim.vn",
+        },
       ],
     }
   },
