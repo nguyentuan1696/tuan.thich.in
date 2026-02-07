@@ -22,12 +22,12 @@ export default {
     return {
       partners: [
         {
-          title: "BlueNet Tech & Services Co., Ltd",
+          title: "BlueNet",
           link: "https://bluenet.vn",
         },
         {
-          title: "AnaWim English",
-          link: "https://www.anawim.vn",
+          title: "Anawim English",
+          link: "https://anawim.vn",
         },
       ],
     }
