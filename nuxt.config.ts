@@ -50,21 +50,5 @@ export default defineNuxtConfig({
     },
   },
 
-  runtimeConfig: {
-    spotifyClientId: process.env.NUXT_SPOTIFY_CLIENT_ID,
-    spotifyClientSecret: process.env.NUXT_SPOTIFY_CLIENT_SECRET,
-    spotifyRefreshToken: process.env.NUXT_SPOTIFY_REFRESH_TOKEN,
-
-    public: {
-      // For pubic key
-      // apiBase: process.env.NUXT_PUBLIC_API_BASE ?? 'default value',
-      pocketConsumerKey: process.env.NUXT_PUBLIC_POCKET_CONSUMER_KEY,
-      pocketAccessToken: process.env.NUXT_PUBLIC_POCKET_ACCESS_TOKEN,
-      posthogPublicKey: process.env.NUXT_PUBLIC_POSTHOG_PUBLIC_KEY,
-      posthogHost: "https://us.i.posthog.com",
-      posthogDefaults: "2025-05-24",
-    },
-  },
-
   compatibilityDate: "2025-02-10",
 })
