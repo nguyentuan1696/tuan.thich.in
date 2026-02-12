@@ -25,10 +25,6 @@ export default {
           title: "BlueNet",
           link: "https://bluenet.vn",
         },
-        {
-          title: "Anawim English",
-          link: "https://anawim.vn",
-        },
       ],
     }
   },
