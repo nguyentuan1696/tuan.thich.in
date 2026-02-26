@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@zadigetvoltaire/nuxt-gtm",
     "@nuxtjs/google-fonts",
+    "@nuxt/scripts",
   ],
 
   googleFonts: {
@@ -33,9 +34,6 @@ export default defineNuxtConfig({
     // ... options
   },
 
-  gtm: {
-    id: "GTM-KPLSWCJZ",
-  },
 
   nitro: {
     prerender: {
@@ -48,6 +46,14 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+
+  scripts: {
+    registry: {
+      umamiAnalytics: {
+        websiteId: '8ed455c8-89ac-48ce-8669-6c2f1080b668'
+      }
+    }
   },
 
   compatibilityDate: "2025-02-10",
