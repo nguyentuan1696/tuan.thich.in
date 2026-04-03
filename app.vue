@@ -2,12 +2,11 @@
   <main class="min-h-screen flex flex-col max-w-2xl mx-auto px-4 w-full">
     <TheHeader />
     <NuxtPage class="flex-1" />
-    <TheFooter />
   </main>
 </template>
 
 <script setup lang="ts">
-import { TheHeader, TheFooter } from "#components"
+import { TheHeader } from "#components"
 
 useHead({
   htmlAttrs: {
