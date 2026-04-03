@@ -1,11 +1,11 @@
 <template>
   <section class="space-y-10">
     <p>
-      I'm Tuan, a developer who loves learning and building cool things. I enjoy diving into new technologies and crafting simple, effective solutions to complex problems.
+      Mình là Tuân, một lập trình viên yêu thích việc học hỏi và xây dựng những thứ thú vị. Mình thích tìm hiểu các công nghệ mới và tạo ra những giải pháp đơn giản, hiệu quả cho các vấn đề phức tạp.
     </p>
 
     <p>
-      I build projects like
+      Mình xây dựng các dự án như
       <NuxtLink
         to="https://www.thichtienganh.com"
         target="_blank"
@@ -13,14 +13,14 @@
         class="text-gray-900 border-b border-gray-300 hover:border-gray-900 transition-colors"
         >thichtienganh.com</NuxtLink
       >
-      and
+      và
       <NuxtLink
         to="https://www.thichtailieu.com"
         target="_blank"
         rel="noopener"
         class="text-gray-900 border-b border-gray-300 hover:border-gray-900 transition-colors"
         >thichtailieu.com</NuxtLink
-      >, and collaborate with teams such as
+      >, đồng thời cộng tác với các đội ngũ như
       <NuxtLink
         to="https://bluenet.vn"
         target="_blank"
@@ -32,11 +32,11 @@
 
     <div class="space-y-4">
       <p>
-        I also share my experiences and learnings through my
+        Mình cũng chia sẻ những kinh nghiệm và kiến thức học được qua các bài
         <NuxtLink
           to="/notes"
           class="text-gray-900 border-b border-gray-300 hover:border-gray-900 transition-colors"
-          >notes</NuxtLink
+          >ghi chép</NuxtLink
         >:
       </p>
       <ContentList
@@ -58,7 +58,7 @@
     </div>
 
     <p>
-      You can find my work and connect with me on
+      Bạn có thể xem các dự án của mình và kết nối với mình qua
       <NuxtLink
         to="https://github.com/nguyentuan1696"
         target="_blank"
@@ -72,7 +72,7 @@
         rel="noopener"
         class="text-gray-900 border-b border-gray-300 hover:border-gray-900 transition-colors"
         >LinkedIn</NuxtLink
-      >, or
+      >, hoặc
       <NuxtLink
         to="https://t.me/nguyentuan1696"
         target="_blank"
@@ -80,7 +80,7 @@
         class="text-gray-900 border-b border-gray-300 hover:border-gray-900 transition-colors"
         >Telegram</NuxtLink
       >
-      if you're interested in collaborating or building something meaningful.
+      nếu bạn quan tâm đến việc hợp tác hoặc cùng nhau xây dựng điều gì đó ý nghĩa.
     </p>
   </section>
 </template>
