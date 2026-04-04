@@ -1,22 +1,22 @@
 ---
-title: Udemy
-description: udemy account for free
+title: Tài khoản Udemy miễn phí
+description: Chia sẻ tài khoản Udemy miễn phí cho mọi người
 date: 2025-06-19
 ---
 
-My udemy account have many courses about software development, data science, and devops, and I share them with you total free !!!
+Tài khoản Udemy của mình có rất nhiều khóa học về phát triển phần mềm, khoa học dữ liệu và DevOps, và mình chia sẻ chúng với các bạn hoàn toàn miễn phí !!!
 
-Use the account information below to log in to Udemy.
+Sử dụng thông tin tài khoản bên dưới để đăng nhập vào Udemy.
 
-### Step 1:
+### Bước 1:
 
-[Go to the Udemy login page](https://www.udemy.com)
+[Truy cập trang đăng nhập Udemy](https://www.udemy.com)
 
-### Step 2: Enter account information:
+### Bước 2: Nhập thông tin tài khoản:
 
 - ID: nguyentuanudemy@gmail.com
-- Password: trang654321
+- Mật khẩu: trang654321
 
-### Step 3: Get OTP Login Code
+### Bước 3: Lấy mã OTP đăng nhập
 
-[Join telegram channel](https://t.me/+5oB9E_P5B-A1MWJl)
+[Tham gia kênh Telegram](https://t.me/+5oB9E_P5B-A1MWJl)

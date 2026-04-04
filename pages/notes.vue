@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-useHead({ title: "Notes" })
+useHead({ title: "Ghi chép" })
 </script>
 
 <template>
-  <div>
-    <h1 class="mb-8">Notes</h1>
+  <section class="space-y-10">
+     <h2 class="text-lg font-semibold">Ghi chép</h2>
     <ContentList
       path="/notes"
       :query="{ draft: false, sort: [{ date: -1 }] }"
@@ -23,5 +23,5 @@ useHead({ title: "Notes" })
         </p>
       </template>
     </ContentList>
-  </div>
+  </section>
 </template>

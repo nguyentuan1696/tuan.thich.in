@@ -1,7 +1,9 @@
 <template>
   <section class="space-y-10">
+    <h2 class="text-lg font-semibold">Nguyễn Tuấn</h2>
+
     <p>
-      Mình là Tuân, một lập trình viên yêu thích việc học hỏi và xây dựng những thứ thú vị. Mình thích tìm hiểu các công nghệ mới và tạo ra những giải pháp đơn giản, hiệu quả cho các vấn đề phức tạp.
+      Mình là một thợ code, thích học hỏi về mọi thứ và xây dựng các sản phẩm giải quyết được các vấn đề thiết thực.
     </p>
 
     <p>
