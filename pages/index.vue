@@ -3,26 +3,27 @@
     <h2 class="text-lg font-semibold">Nguyễn Tuấn</h2>
 
     <p>
-      Mình là một thợ code, thích học hỏi về mọi thứ và xây dựng các sản phẩm giải quyết được các vấn đề thiết thực.
+      Một thợ code thích khám phá, học hỏi những điều mới mẻ và xây dựng các sản
+      phẩm mang lại giá trị thiết thực.
     </p>
 
     <p>
-      Mình xây dựng các dự án như
+      Các dự án đang thực hiện bao gồm
       <NuxtLink
         to="https://www.thichtienganh.com"
         target="_blank"
         rel="noopener"
         class="text-gray-900 border-b border-gray-300 hover:border-gray-900 transition-colors"
         >thichtienganh.com</NuxtLink
-      >
-      và
+      >,
       <NuxtLink
         to="https://www.thichtailieu.com"
         target="_blank"
         rel="noopener"
         class="text-gray-900 border-b border-gray-300 hover:border-gray-900 transition-colors"
         >thichtailieu.com</NuxtLink
-      >, đồng thời cộng tác với các đội ngũ như
+      >
+      bên cạnh việc cộng tác cùng những đội ngũ như
       <NuxtLink
         to="https://bluenet.vn"
         target="_blank"
@@ -34,7 +35,7 @@
 
     <div class="space-y-4">
       <p>
-        Mình cũng chia sẻ những kinh nghiệm và kiến thức học được qua các bài
+        Những kinh nghiệm và kiến thức tích lũy được chia sẻ qua các bài
         <NuxtLink
           to="/notes"
           class="text-gray-900 border-b border-gray-300 hover:border-gray-900 transition-colors"
@@ -60,7 +61,7 @@
     </div>
 
     <p>
-      Bạn có thể xem các dự án của mình và kết nối với mình qua
+      Có thể xem thêm các dự án khác hoặc kết nối qua
       <NuxtLink
         to="https://github.com/nguyentuan1696"
         target="_blank"
@@ -82,7 +83,7 @@
         class="text-gray-900 border-b border-gray-300 hover:border-gray-900 transition-colors"
         >Telegram</NuxtLink
       >
-      nếu bạn quan tâm đến việc hợp tác hoặc cùng nhau xây dựng điều gì đó ý nghĩa.
+      để cùng nhau xây dựng những điều ý nghĩa.
     </p>
   </section>
 </template>
