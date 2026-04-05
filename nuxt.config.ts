@@ -1,5 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  
+  app: {
+    head: {
+      script: [
+        {
+          src: 'https://cloud.umami.is/script.js',
+          async: true,
+          defer: true,
+          'data-website-id': '8ed455c8-89ac-48ce-8669-6c2f1080b668'
+        }
+      ]
+    }
+  },
+
   pages: true,
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
@@ -14,7 +28,6 @@ export default defineNuxtConfig({
   modules: [
     "@nuxt/image",
     "@nuxt/content",
-    "@zadigetvoltaire/nuxt-gtm",
     "@nuxtjs/google-fonts",
   ],
 
@@ -33,10 +46,6 @@ export default defineNuxtConfig({
     // ... options
   },
 
-  gtm: {
-    id: "GTM-KPLSWCJZ",
-  },
-
   nitro: {
     prerender: {
       routes: ["/sitemap.xml"],
@@ -51,12 +60,8 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-
     public: {
       // For pubic key
-      posthogPublicKey: process.env.NUXT_PUBLIC_POSTHOG_PUBLIC_KEY,
-      posthogHost: "https://us.i.posthog.com",
-      posthogDefaults: "2025-05-24",
     },
   },
 
