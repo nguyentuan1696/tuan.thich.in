@@ -10,14 +10,14 @@
     <p>
       Các dự án đang thực hiện bao gồm
       <NuxtLink
-        to="https://www.thichtienganh.com"
+        to="https://thichtienganh.com"
         target="_blank"
         rel="noopener"
         class="text-gray-900 border-b border-gray-300 hover:border-gray-900 transition-colors"
         >thichtienganh.com</NuxtLink
       >,
       <NuxtLink
-        to="https://www.thichtailieu.com"
+        to="https://thichtailieu.com"
         target="_blank"
         rel="noopener"
         class="text-gray-900 border-b border-gray-300 hover:border-gray-900 transition-colors"
@@ -70,7 +70,7 @@
         >GitHub</NuxtLink
       >,
       <NuxtLink
-        to="https://www.linkedin.com/in/nguyentuan1696/"
+        to="https://linkedin.com/in/nguyentuan1696/"
         target="_blank"
         rel="noopener"
         class="text-gray-900 border-b border-gray-300 hover:border-gray-900 transition-colors"
