@@ -2,6 +2,7 @@
 title: Tài khoản Udemy miễn phí
 description: Chia sẻ tài khoản Udemy miễn phí cho mọi người
 date: 2025-06-19
+draft: true
 ---
 
 Tài khoản Udemy của mình có rất nhiều khóa học về phát triển phần mềm, khoa học dữ liệu và DevOps, và mình chia sẻ chúng với các bạn hoàn toàn miễn phí !!!

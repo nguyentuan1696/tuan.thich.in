@@ -1,12 +1,10 @@
 <template>
-  <main class="min-h-screen flex flex-col max-w-2xl mx-auto px-4 w-full">
-    <TheHeader />
+  <main class="min-h-screen flex flex-col max-w-2xl mx-auto px-4 w-full py-16">
     <NuxtPage class="flex-1" />
   </main>
 </template>
 
 <script setup lang="ts">
-import { TheHeader } from "#components"
 
 useHead({
   htmlAttrs: {

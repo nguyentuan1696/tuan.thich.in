@@ -1,13 +1,18 @@
 <script lang="ts" setup>
-useHead({ title: "Ghi chép" })
+const showDraftPosts = import.meta.dev
+
+useHead({ title: "Bài viết" })
 </script>
 
 <template>
   <section class="space-y-10">
-     <h2 class="text-lg font-semibold">Ghi chép</h2>
+     <h2 class="text-lg font-semibold">Bài viết</h2>
     <ContentList
       path="/notes"
-      :query="{ draft: false, sort: [{ date: -1 }] }"
+      :query="{
+        ...(showDraftPosts ? {} : { draft: false }),
+        sort: [{ date: -1 }],
+      }"
     >
       <template #default="{ list }">
         <ul class="space-y-4 list-disc pl-4">

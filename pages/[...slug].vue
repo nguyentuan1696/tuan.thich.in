@@ -1,13 +1,19 @@
 <script lang="ts" setup>
+const showDraftPosts = import.meta.dev
+
 const formatDate = (dateString: string) => {
   if (!dateString) return ''
   const date = new Date(dateString)
   return date.toLocaleDateString('vi-VN')
 }
 
-const { data: doc } = await useAsyncData("doc", () =>
-  queryContent(useRoute().path).findOne()
-)
+const createDocQuery = () => {
+  const contentQuery = queryContent(useRoute().path)
+
+  return showDraftPosts ? contentQuery : contentQuery.where({ draft: false })
+}
+
+const { data: doc } = await useAsyncData("doc", () => createDocQuery().findOne())
 
 useHead({
   title: doc.value?.title,
@@ -25,6 +31,12 @@ useSeoMeta({
   <article>
     <ContentDoc v-slot="{ doc }">
       <header class="mb-8">
+        <NuxtLink
+          to="/"
+          class="mb-12 inline-flex text-base text-gray-400 underline decoration-gray-300 underline-offset-4 transition-colors hover:text-gray-900 hover:decoration-gray-900"
+        >
+          &larr; Quay lại
+        </NuxtLink>
         <h1 class="text-xl font-medium">{{ doc.title }}</h1>
         <div class="text-sm text-gray-400">
           {{ doc.date ? formatDate(doc.date) : '' }}
@@ -73,7 +85,7 @@ h3 {
 .prose p a,
 .prose li a,
 .prose code a {
-  @apply text-blue-500 hover:text-gray-800 transition-colors;
+  @apply text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors hover:decoration-gray-900;
 }
 
 .prose code {

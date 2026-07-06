@@ -1,6 +1,8 @@
 {
   "files.associations": {
-  // "*.scss": "tailwindcss", // If you use .scss
-  "*.vue": "vue"
-}
+    "*.vue": "vue"
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore"
 }
