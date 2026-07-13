@@ -33,7 +33,7 @@ useSeoMeta({
       <header class="mb-8">
         <NuxtLink
           to="/"
-          class="mb-12 inline-flex text-base text-gray-400 underline decoration-gray-300 underline-offset-4 transition-colors hover:text-gray-900 hover:decoration-gray-900"
+          class="mb-12 inline-flex text-base text-gray-400 transition-colors hover:text-gray-900"
         >
           &larr; Quay lại
         </NuxtLink>
