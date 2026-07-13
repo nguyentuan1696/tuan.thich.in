@@ -4,13 +4,6 @@ description: Về các kỹ năng và công nghệ của mình
 date: 2025-03-20
 ---
 
----
-
-title: Về các kỹ năng và công nghệ của mình
-description: Những công nghệ, công cụ và kỹ năng mình đang sử dụng trong quá trình phát triển phần mềm.
-date: 2025-03-20
-----------------
-
 Trong quá trình làm việc, mình có cơ hội tiếp cận nhiều công nghệ khác nhau. Dưới đây là những công nghệ và công cụ mình sử dụng thường xuyên để xây dựng các sản phẩm.
 
 ## 1. Frontend (React & Next.js)
