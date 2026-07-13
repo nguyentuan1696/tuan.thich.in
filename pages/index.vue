@@ -3,16 +3,15 @@ const showDraftPosts = import.meta.dev
 </script>
 
 <template>
-  <section class="space-y-10">
-    <h2 class="text-lg font-semibold">Nguyễn Tuấn</h2>
+  <section class="space-y-6">
+    <h2 class="text-lg font-semibold mb-12">Nguyễn Tuấn</h2>
 
     <p>
-      Một thợ code thích khám phá, học hỏi những điều mới mẻ và xây dựng các sản
-      phẩm mang lại giá trị thiết thực.
+      Mình là một thợ code, luôn thích khám phá, học hỏi những điều mới và xây dựng những sản phẩm mang lại giá trị thiết thực.
     </p>
 
     <p>
-      Các dự án đang thực hiện bao gồm
+      Hiện đang phát triển các dự án như
       <NuxtLink
         to="https://thichtienganh.com"
         target="_blank"
@@ -27,24 +26,24 @@ const showDraftPosts = import.meta.dev
         class="text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900 transition-colors"
         >thichtailieu.com</NuxtLink
       >
-      bên cạnh việc cộng tác cùng những đội ngũ như
+       đồng thời cộng tác với
       <NuxtLink
         to="https://bluenet.vn"
         target="_blank"
         rel="noopener"
         class="text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900 transition-colors"
         >BlueNet</NuxtLink
-      >.
+      > phát triển các sản phẩm phần mềm cho khách hàng.
     </p>
 
     <div class="space-y-4">
       <p>
-        Những kinh nghiệm và kiến thức tích lũy được chia sẻ qua các bài
+        Một vài
         <NuxtLink
           to="/notes"
           class="text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900 transition-colors"
           >bài viết</NuxtLink
-        >:
+        > nổi bật:
       </p>
       <ContentList
         path="/notes"
@@ -69,13 +68,13 @@ const showDraftPosts = import.meta.dev
     </div>
 
     <p>
-      Có thể xem thêm các dự án khác hoặc kết nối qua
+     Xem thêm thông tin về mình trên
       <NuxtLink
         to="https://github.com/nguyentuan1696"
         target="_blank"
         rel="noopener"
         class="text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900 transition-colors"
-        >GitHub</NuxtLink
+        >Github</NuxtLink
       >,
       <NuxtLink
         to="https://linkedin.com/in/nguyentuan1696/"
@@ -83,15 +82,15 @@ const showDraftPosts = import.meta.dev
         rel="noopener"
         class="text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900 transition-colors"
         >LinkedIn</NuxtLink
-      >, hoặc
+      > hoặc liên hệ qua
       <NuxtLink
         to="https://t.me/nguyentuan1696"
         target="_blank"
         rel="noopener"
         class="text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900 transition-colors"
         >Telegram</NuxtLink
-      >
-      để cùng nhau xây dựng những điều ý nghĩa.
+      >.
+      
     </p>
   </section>
 </template>

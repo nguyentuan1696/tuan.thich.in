@@ -4,24 +4,46 @@ description: Về các kỹ năng và công nghệ của mình
 date: 2025-03-20
 ---
 
-## 1. Frontend (React và Next.js)
+---
 
-Từ năm 2019, mình đã chuyên sâu vào hệ sinh thái React, sau đó áp dụng Next.js vào năm 2021 để xây dựng các ứng dụng web hiện đại. Stack này kết hợp với TypeScript để đảm bảo tính an toàn về kiểu dữ liệu và nâng cao trải nghiệm phát triển. Mỗi dự án đều tuân theo phương pháp [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/), tạo ra các cấu trúc component có khả năng mở rộng và dễ bảo trì.
+title: Về các kỹ năng và công nghệ của mình
+description: Những công nghệ, công cụ và kỹ năng mình đang sử dụng trong quá trình phát triển phần mềm.
+date: 2025-03-20
+----------------
 
-## 2. Styling (Tailwind CSS và shadcn/ui)
+Trong quá trình làm việc, mình có cơ hội tiếp cận nhiều công nghệ khác nhau. Dưới đây là những công nghệ và công cụ mình sử dụng thường xuyên để xây dựng các sản phẩm.
 
-[Tailwind CSS](https://tailwindcss.com) đóng vai trò là giải pháp tạo kiểu chính của mình, cung cấp cách tiếp cận utility-first để phát triển nhanh chóng. Việc tích hợp các component [shadcn/ui](https://ui.shadcn.com) cho phép tạo ra các giao diện nhất quán, dễ tiếp cận trong khi vẫn giữ được sự linh hoạt hoàn toàn trong thiết kế.
+## 1. Frontend (React & Next.js)
+
+Mình bắt đầu làm việc với React từ năm 2019 và sử dụng Next.js từ năm 2021 để phát triển các ứng dụng web hiện đại. TypeScript luôn được sử dụng trong hầu hết các dự án nhằm tăng tính an toàn của mã nguồn và giúp việc bảo trì trở nên dễ dàng hơn.
+
+Khi xây dựng giao diện, mình thường áp dụng phương pháp [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/) để tổ chức component một cách rõ ràng, giúp dự án dễ mở rộng và dễ bảo trì khi quy mô ngày càng lớn.
+
+## 2. Styling (Tailwind CSS & shadcn/ui)
+
+[Tailwind CSS](https://tailwindcss.com) là framework CSS mình sử dụng trong hầu hết các dự án nhờ cách tiếp cận utility-first, giúp quá trình phát triển giao diện nhanh và nhất quán.
+
+Bên cạnh đó, mình thường kết hợp với [shadcn/ui](https://ui.shadcn.com) để xây dựng những giao diện hiện đại, dễ tùy biến và đảm bảo trải nghiệm người dùng.
 
 ## 3. Backend (Golang & Node.js)
 
-Với kinh nghiệm làm Node.js từ năm 2019 và Golang từ năm 2021, mình đã phát triển một cách tiếp cận cân bằng trong việc phát triển backend. Node.js cung cấp sức mạnh cho các dự án MVP và quy mô nhỏ của mình, cho phép lặp lại nhanh chóng và chu kỳ phát triển tốc độ. Đối với các ứng dụng doanh nghiệp đòi hỏi hiệu suất cao, mình triển khai các giải pháp bằng Golang, tận dụng mô hình xử lý đồng thời mạnh mẽ và hiệu quả runtime của nó.
+Mình bắt đầu làm việc với Node.js từ năm 2019 và Golang từ năm 2021.
+
+Node.js phù hợp với các dự án cần phát triển nhanh hoặc xây dựng MVP, trong khi Golang là lựa chọn ưu tiên cho các hệ thống yêu cầu hiệu năng cao, khả năng xử lý đồng thời tốt và dễ mở rộng.
+
+Tùy vào từng bài toán, mình sẽ lựa chọn công nghệ phù hợp thay vì chỉ sử dụng một ngôn ngữ duy nhất.
 
 ## 4. Cơ sở dữ liệu (PostgreSQL)
 
-PostgreSQL là lựa chọn ưu tiên của mình vì sự tin cậy và bộ tính năng mạnh mẽ. Các truy vấn SQL thuần túy tạo nên nền tảng cho các tương tác cơ sở dữ liệu, mang lại khả năng kiểm soát chính xác và hiệu suất tối ưu. Thư viện [postgres](https://github.com/porsager/postgres) xử lý các triển khai JavaScript, trong khi [sqlx](https://github.com/jmoiron/sqlx) quản lý các ứng dụng Golang, đảm bảo an toàn kiểu dữ liệu và hiệu quả truy vấn.
+PostgreSQL là hệ quản trị cơ sở dữ liệu mình sử dụng nhiều nhất nhờ tính ổn định, hiệu năng tốt và hỗ trợ nhiều tính năng mạnh mẽ.
+
+Mình ưu tiên viết SQL thuần để tối ưu truy vấn và kiểm soát dữ liệu tốt hơn. Với Node.js, mình sử dụng thư viện [postgres](https://github.com/porsager/postgres), còn với Golang là [sqlx](https://github.com/jmoiron/sqlx).
 
 ## 5. Hạ tầng (Infrastructure)
 
-Kiến trúc triển khai của mình dựa trên [Ansible](https://www.ansible.com) để tự động hóa, Docker để đóng gói container và VPS để lưu trữ. Một stack giám sát toàn diện bao gồm Prometheus và Grafana giúp theo dõi sức khỏe hệ thống, kết hợp với Nginx để xử lý các nhiệm vụ reverse proxy.
+Mình triển khai các dự án trên VPS, sử dụng Docker để đóng gói ứng dụng và Ansible để tự động hóa quá trình cấu hình cũng như triển khai.
 
-Khám phá cấu hình hạ tầng hoàn chỉnh trong [kho lưu trữ hạ tầng](https://github.com/nguyentuan1696/infra-ops) của mình.
+Đối với việc giám sát hệ thống, mình sử dụng Prometheus và Grafana để theo dõi hiệu năng, kết hợp với Nginx làm reverse proxy và quản lý lưu lượng truy cập.
+
+Bạn có thể tham khảo cấu hình hạ tầng mình đang sử dụng tại kho mã nguồn [infra-ops](https://github.com/nguyentuan1696/infra-ops) trên GitHub.
+
