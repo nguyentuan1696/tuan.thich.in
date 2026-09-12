@@ -1,0 +1,8 @@
+name = "tuan-thich-in"
+compatibility_date = "2026-09-12"
+
+[assets]
+directory = "./dist"
+# Nếu dùng React Router / client-side routing (SPA), bật dòng dưới để mọi route
+# không khớp file tĩnh đều trả về index.html thay vì 404:
+not_found_handling = "single-page-application"
