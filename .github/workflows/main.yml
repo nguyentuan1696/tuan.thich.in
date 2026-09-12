@@ -1,36 +1,35 @@
-name: Deploy to Cloudflare
+name: Deploy to Cloudflare Pages
 
 on:
   push:
-    branches: [main]
-  workflow_dispatch:
+    branches:
+      - main 
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
-    env:
-      NODE_VERSION: 22
-      NITRO_PRESET: cloudflare
-      NUXT_SSR: 'true'
-
+    permissions:
+      contents: read
+      deployments: write
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'yarn'
+          node-version: 20
+          cache: npm 
 
-      - name: Install Dependencies
-        run: yarn install --frozen-lockfile
+      - name: Install dependencies
+        run: npm ci
 
-      - name: Build
-        run: yarn build
+      - name: Build project
+        run: npm run build
 
-      - name: Deploy to Cloudflare
+      - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          command: deploy --name tuan-thich-in-${{ github.ref_name }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=tuan.thich.in
